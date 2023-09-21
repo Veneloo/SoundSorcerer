@@ -24,6 +24,6 @@ module.exports = {
 
         queue.setPaused(false);                                           //if there is song playing we simply call the Pause Function but this time we set it to false to resume
 
-        await interaction.reply("The current song has been resymed.");   //when the command is executed we let the user know the song was resumed
+        await interaction.reply("The current song has been resumed.");   //when the command is executed we let the user know the song was resumed
     }
 }

@@ -76,9 +76,9 @@ module.exports = {
                 await queue.addTrack(song);
 
                 embed
-                    .setDescription('Added **[${song.title}](${song.url})** to queue')  //This will add the songs to the queue
+                    .setDescription(`Added **[${song.title}](${song.url})** to queue`)  //This will add the songs to the queue
                     .setThumbnail(song.thumbnail)
-                    .setFooter({text: 'Duration: ${song.duration}'});
+                    .setFooter({text: `Duration: ${song.duration}`});
             }
             else if(interaction.options.getSubcommand() === "playlist")     //If the user picked the playlist command it will wait for the playlist url
             {
@@ -99,9 +99,9 @@ module.exports = {
                 await queue.addTracks(song);
 
                 embed
-                    .setDescription('Added **[${playlist.title}](${playlist.url})** to queue')  //This simply adds the playlist to the queue
+                    .setDescription(`Added **[${playlist.title}](${playlist.url})** to queue`)  //This simply adds the playlist to the queue
                     .setThumbnail(playlist.thumbnail)
-                    .setFooter({text: 'Duration: ${playlist.duration}'});
+                    .setFooter({text: `Duration: ${playlist.duration}`});
             }
             else if(interaction.options.getSubcommand() === "search")       //in case the user chose the search command it will expect a keyword
             {
@@ -122,9 +122,9 @@ module.exports = {
                 await queue.addTracks(song);
 
                 embed
-                    .setDescription('Added **[${song.title}](${song.url})** to queue')  //This simply adds the song to the queue
+                    .setDescription(`Added **[${song.title}](${song.url})** to queue`)  //This simply adds the song to the queue
                     .setThumbnail(song.thumbnail)
-                    .setFooter({text: 'Duration: ${song.duration}'});
+                    .setFooter({text: `Duration: ${song.duration}`});
             }
             //here we actually start playing the music
             if(!queue.playing) await queue.play();  //We first check that if there isnt music already playing we start playing music
