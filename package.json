@@ -1,0 +1,29 @@
+{
+  "name": "soundsorcerer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veneloo/SoundSorcerer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Veneloo/SoundSorcerer/issues"
+  },
+  "homepage": "https://github.com/Veneloo/SoundSorcerer#readme",
+  "dependencies": {
+    "@discordjs/builders": "^1.6.5",
+    "@discordjs/opus": "^0.9.0",
+    "@discordjs/rest": "^2.0.1",
+    "@discordjs/voice": "^0.16.0",
+    "discord-api-types": "^0.37.57",
+    "discord-player": "^6.6.4",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1"
+  }
+}
