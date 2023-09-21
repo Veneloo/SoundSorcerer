@@ -17,13 +17,13 @@ module.exports = {
         const queue = client.player.getQueue(interaction.guild);
 
         if (!queue) {                                               //First we check if there is a song playing
-            await interaction.reply("There is no song playing.");   //if there iusnt we let the user know
+            await interaction.reply("There is no song playing.");   //if there isnt we let the user know
             return;
         }
 
 
         queue.setPaused(true);                                           //if there is song playing we simply call the Pause Function
 
-        await interaction.reply("The current song has been paused.");   //when the command is executed we let the user know which song was paused
+        await interaction.reply("The current song has been paused.");   //when the command is executed we let the user know the song was paused
     }
 }
